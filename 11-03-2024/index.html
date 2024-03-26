@@ -12,6 +12,8 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+ <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
   </head>
   <body>
     <nav>
@@ -19,12 +21,22 @@
         <img src="./Images/logo.png.webp">
       </div>
       <div class="center-div">
+    
         <ul>
-          <li>HOME</li>
+          <li class="active">HOME</li>
           <li>WOMEN'S</li>
           <li>MEN's</li>
-          <li>SHOP</li>
-          <li>PAGES</li>
+          <li >SHOP
+           
+          </li>
+          <li class="pagehover">PAGES
+             <ul class="dropdown-content">
+<li>Product Details</li>
+<li>Shop Cart</li>
+<li>Checkout</li>
+<li>Blog Details</li>
+</ul>
+          </li>
           <li>BLOG</li>
           <li>CONTACT</li>
         </ul>
@@ -37,9 +49,12 @@
           </div>
           <div class="heart-icon">
             <i class="fa-regular fa-heart"></i>
+            <div class="tip">2</div>
           </div>
           <div class="clipboard-icon">
             <i class="fa-regular fa-clipboard"></i>
+                        <div class="tip-1">2</div>
+
           </div>
         </div>
           <span class="menu-icon">
@@ -51,35 +66,42 @@
     <div class="main"><div class="left-Side">
       
       <h1>Women's fashion</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, possimus quos veritatis ipsa odit minus esse natus dolorum culpa eaque, odio facilis totam numquam tenetur voluptate reprehenderit ut cupiditate laudantium!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br/>Enim, possimus quos veritatis ipsa odit dolorum.</p>
     <h3>SHOP NOW</h3>
+    <div class="after"></div>
     </div>
     <div class="right-Side">
-      <div class="top"><div class="box1">
-        <h2>Men's fashion</h2>
+      <div class="part1"><div class="box1">
+        <div class="textpart"> <h2>Men's fashion</h2>
         <p>358 items</p>
-        <h3>SHOP NOW</h3>
+        <h3>SHOP NOW</h3></div>
+       
       </div>
-      <div class="box2">
-         <h2>Men's fashion</h2>
+       <div class="box2">
+        <div class="textpart"><h2>Men's fashion</h2>
         <p>358 items</p>
-        <h3>SHOP NOW</h3>
+        <h3>SHOP NOW</h3></div>
+         
       </div></div>
-      <div class="bottom">  <div class="box3">
-         <h2>Men's fashion</h2>
+      <div class="part2">  <div class="box3"><div class="textpart"><h2>Men's fashion</h2>
         <p>358 items</p>
-        <h3>SHOP NOW</h3>
+        <h3>SHOP NOW</h3></div>
+         
       </div>
-      <div class="box4">
-         <h2>Men's fashion</h2>
+      <div class="box4"><div class="textpart"><h2>Men's fashion</h2>
         <p>358 items</p>
-        <h3>SHOP NOW</h3>
-      </div></div>
+        <h3>SHOP NOW</h3></div>
+         
+      </div></div> 
+     
+     
+     
       
     
     </div></div>
-    <div class="product-List"><div class="new-Product">
-       <h3>NEW PRODUCT</h3>
+    <div class="product-List">
+      <div class="new-Product">
+       <h1>NEW PRODUCT</h1>
       </div>
       <div class="Category">
         <ul>
@@ -94,8 +116,16 @@
       <div class="product-contain"> <div class="product-Top">
         <div class="product1">
           <img src="./Images/product-1.jpg.webp"/>
-          <p>Buttons tweed blazer</p>
-          <div class="rating">
+          <div class="labelnew">New</div>
+          <div class="product__hover">
+<div><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+<div><i class="fa-regular fa-heart"></i></div>
+<div><i class="fa-solid fa-bag-shopping"></i></div>
+
+</div>
+          
+          <div class="note"><p>Buttons tweed blazer</p></div>
+           <div class="rating">
 <i class="fa fa-star"></i>
 <i class="fa fa-star"></i>
 <i class="fa fa-star"></i>
@@ -107,7 +137,14 @@
         </div>
         <div class="product2">
           <img src="./Images/product-2.jpg.webp"/>
-          <p>Buttons tweed blazer</p>
+          <div class="product__hover">
+<div><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+<div><i class="fa-regular fa-heart"></i></div>
+<div><i class="fa-solid fa-bag-shopping"></i></div>
+
+</div>
+          <div class="note"><p>Buttons tweed blazer</p></div>
+          
           <div class="rating">
 <i class="fa fa-star"></i>
 <i class="fa fa-star"></i>
@@ -119,7 +156,15 @@
         </div>
         <div class="product3">
           <img src="./Images/product-3.jpg.webp"/>
-          <p>Buttons tweed blazer</p>
+              <div class="product__hover">
+<div><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+<div><i class="fa-regular fa-heart"></i></div>
+<div><i class="fa-solid fa-bag-shopping"></i></div>
+
+</div>
+          <div class="labelstockout">out of stock</div>
+          <div class="note"><p>Buttons tweed blazer</p></div>
+          
           <div class="rating">
 <i class="fa fa-star"></i>
 <i class="fa fa-star"></i>
@@ -131,7 +176,14 @@
         </div>
         <div class="product4">
           <img src="./Images/product-4.jpg.webp"/>
-          <p>Buttons tweed blazer</p>
+              <div class="product__hover">
+<div><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+<div><i class="fa-regular fa-heart"></i></div>
+<div><i class="fa-solid fa-bag-shopping"></i></div>
+
+</div>
+          <div class="note"><p>Buttons tweed blazer</p></div>
+          
           <div class="rating">
 <i class="fa fa-star"></i>
 <i class="fa fa-star"></i>
@@ -143,9 +195,16 @@
         </div>
         </div>
          <div class="product-Top">
-        <div class="product1">
+        <div class="product5">
           <img src="./Images/product-5.jpg.webp"/>
-          <p>Buttons tweed blazer</p>
+              <div class="product__hover">
+<div><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+<div><i class="fa-regular fa-heart"></i></div>
+<div><i class="fa-solid fa-bag-shopping"></i></div>
+
+</div>
+          <div class="note"><p>Buttons tweed blazer</p></div>
+          
           <div class="rating">
 <i class="fa fa-star"></i>
 <i class="fa fa-star"></i>
@@ -156,9 +215,17 @@
 <div class="product__price">$ 59.0</div>
 
         </div>
-        <div class="product2">
+        <div class="product6">
           <img src="./Images/product-6.jpg.webp"/>
-          <p>Buttons tweed blazer</p>
+          <div class="labelsale">Sale</div>
+              <div class="product__hover">
+<div><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+<div><i class="fa-regular fa-heart"></i></div>
+<div><i class="fa-solid fa-bag-shopping"></i></div>
+
+</div>
+          <div class="note"><p>Buttons tweed blazer</p></div>
+          
           <div class="rating">
 <i class="fa fa-star"></i>
 <i class="fa fa-star"></i>
@@ -168,9 +235,16 @@
 </div>
 <div class="product__price">$ 59.0</div>
         </div>
-        <div class="product3">
+        <div class="product7">
           <img src="./Images/product-7.jpg.webp"/>
-          <p>Buttons tweed blazer</p>
+              <div class="product__hover">
+<div><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+<div><i class="fa-regular fa-heart"></i></div>
+<div><i class="fa-solid fa-bag-shopping"></i></div>
+
+</div>
+          <div class="note"><p>Buttons tweed blazer</p></div>
+          
           <div class="rating">
 <i class="fa fa-star"></i>
 <i class="fa fa-star"></i>
@@ -180,9 +254,16 @@
 </div>
 <div class="product__price">$ 59.0</div>
         </div>
-        <div class="product4">
+        <div class="product8">
           <img src="./Images/product-8.jpg.webp"/>
-          <p>Buttons tweed blazer</p>
+              <div class="product__hover">
+<div><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+<div><i class="fa-regular fa-heart"></i></div>
+<div><i class="fa-solid fa-bag-shopping"></i></div>
+
+</div>
+          <div class="note"><p>Buttons tweed blazer</p></div>
+          
           <div class="rating">
 <i class="fa fa-star"></i>
 <i class="fa fa-star"></i>
@@ -198,14 +279,16 @@
      
       <div class="banner">
         <div class="banner-Content">
-          <h3>CHOLE COLLECTION</h3>
+          <h2>CHOLE COLLECTION</h2>
           <h1>The Project Jocket</h1>
-          <p>SHOP NOW</p>
+          <h3>SHOP NOW</h3>
         </div>
       </div>
+      
       <div class="hot_trend">
-        <div class="grid1"> <div class="header1">
-          <h3>HOT TREND</h3>
+        <div class="grid1"> 
+          <div class="header1">
+          <h4>HOT TREND</h4>
         </div>
         
         <div class="item1">
@@ -220,9 +303,37 @@
 </div>
 <div class="product__price">$ 59.0</div></div>
           
-        </div></div>
-        <div class="grid2">         <div class="header1">
-          <h3>BEST SELLER</h3>
+        </div>
+         <div class="item1">
+          <div class="left"> <img src="./Images/ht-2.jpg.webp"/></div>
+          <div class="right"><p>chain bucket bag</p>
+          <div class="rating">
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+</div>
+<div class="product__price">$ 59.0</div></div>
+          
+        </div>
+         <div class="item1">
+          <div class="left"> <img src="./Images/ht-3.jpg.webp"/></div>
+          <div class="right"><p>chain bucket bag</p>
+          <div class="rating">
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+</div>
+<div class="product__price">$ 59.0</div></div>
+          
+        </div>
+      </div>
+        <div class="grid2">         
+          <div class="header1">
+          <h4>BEST SELLER</h4>
         </div>
         <div class="item1">
           <div class="left"> <img src="./Images/bs-1.jpg.webp"/></div>
@@ -236,12 +347,64 @@
 </div>
 <div class="product__price">$ 59.0</div></div>
           
+        </div>
+      <div class="item1">
+          <div class="left"> <img src="./Images/bs-2.jpg.webp"/></div>
+          <div class="right"><p>chain bucket bag</p>
+          <div class="rating">
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+</div>
+<div class="product__price">$ 59.0</div></div>
+          
+        </div>
+      <div class="item1">
+          <div class="left"> <img src="./Images/bs-3.jpg.webp"/></div>
+          <div class="right"><p>chain bucket bag</p>
+          <div class="rating">
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+</div>
+<div class="product__price">$ 59.0</div></div>
+          
         </div></div>
         <div class="grid3"> <div class="header1">
-          <h3>FEATURES</h3>
+          <h4>FEATURES</h4>
         </div>
         <div class="item1">
           <div class="left"> <img src="./Images/f-1.jpg.webp"/></div>
+          <div class="right"><p>chain bucket bag</p>
+          <div class="rating">
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+</div>
+<div class="product__price">$ 59.0</div></div>
+          
+        </div>
+       <div class="item1">
+          <div class="left"> <img src="./Images/f-2.jpg.webp"/></div>
+          <div class="right"><p>chain bucket bag</p>
+          <div class="rating">
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+</div>
+<div class="product__price">$ 59.0</div></div>
+          
+        </div>
+       <div class="item1">
+          <div class="left"> <img src="./Images/f-3.jpg.webp"/></div>
           <div class="right"><p>chain bucket bag</p>
           <div class="rating">
 <i class="fa fa-star"></i>
@@ -259,110 +422,8 @@
 
          
           </div>
-          <div class="hot_trend">
-        <div class="grid1"> <div class="header1">
-          <h3>HOT TREND</h3>
-        </div>
-        
-        <div class="item1">
-          <div class="left"> <img src="./Images/ht-1.jpg.webp"/></div>
-          <div class="right"><p>chain bucket bag</p>
-          <div class="rating">
-<i class="fa fa-star"></i>
-<i class="fa fa-star"></i>
-<i class="fa fa-star"></i>
-<i class="fa fa-star"></i>
-<i class="fa fa-star"></i>
-</div>
-<div class="product__price">$ 59.0</div></div>
           
-        </div></div>
-        <div class="grid2">         <div class="header1">
-          <h3>BEST SELLER</h3>
-        </div>
-        <div class="item1">
-          <div class="left"> <img src="./Images/bs-1.jpg.webp"/></div>
-          <div class="right"><p>chain bucket bag</p>
-          <div class="rating">
-<i class="fa fa-star"></i>
-<i class="fa fa-star"></i>
-<i class="fa fa-star"></i>
-<i class="fa fa-star"></i>
-<i class="fa fa-star"></i>
-</div>
-<div class="product__price">$ 59.0</div></div>
-          
-        </div></div>
-        <div class="grid3"> <div class="header1">
-          <h3>FEATURES</h3>
-        </div>
-        <div class="item1">
-          <div class="left"> <img src="./Images/f-1.jpg.webp"/></div>
-          <div class="right"><p>chain bucket bag</p>
-          <div class="rating">
-<i class="fa fa-star"></i>
-<i class="fa fa-star"></i>
-<i class="fa fa-star"></i>
-<i class="fa fa-star"></i>
-<i class="fa fa-star"></i>
-</div>
-<div class="product__price">$ 59.0</div></div>
-          
-        </div></div>
-       
-
-        
-
          
-          </div>
-          <div class="hot_trend">
-        <div class="grid1"> <div class="header1">
-          <h3>HOT TREND</h3>
-        </div>
-        
-        <div class="item1">
-          <div class="left"> <img src="./Images/ht-1.jpg.webp"/></div>
-          <div class="right"><p>chain bucket bag</p>
-          <div class="rating">
-<i class="fa fa-star"></i>
-<i class="fa fa-star"></i>
-<i class="fa fa-star"></i>
-<i class="fa fa-star"></i>
-<i class="fa fa-star"></i>
-</div>
-<div class="product__price">$ 59.0</div></div>
-          
-        </div></div>
-        <div class="grid2">         <div class="header1">
-          <h3>BEST SELLER</h3>
-        </div>
-        <div class="item1">
-          <div class="left"> <img src="./Images/bs-1.jpg.webp"/></div>
-          <div class="right"><p>chain bucket bag</p>
-          <div class="rating">
-<i class="fa fa-star"></i>
-<i class="fa fa-star"></i>
-<i class="fa fa-star"></i>
-<i class="fa fa-star"></i>
-<i class="fa fa-star"></i>
-</div>
-<div class="product__price">$ 59.0</div></div>
-          
-        </div></div>
-        <div class="grid3"> <div class="header1">
-          <h3>FEATURES</h3>
-        </div>
-        <div class="item1">
-          <div class="left"> <img src="./Images/f-1.jpg.webp"/></div>
-          <div class="right"><p>chain bucket bag</p>
-          <div class="rating">
-<i class="fa fa-star"></i>
-<i class="fa fa-star"></i>
-<i class="fa fa-star"></i>
-<i class="fa fa-star"></i>
-<i class="fa fa-star"></i>
-</div>
-<div class="product__price">$ 59.0</div></div>
           
         </div></div>
        
@@ -382,32 +443,101 @@
             
           
           </div>
+          <section class="services">
+<div class="container">
+<div class="row">
+<div class="col-sm-6">
+<div class="services__item">
+<i class="fa fa-car"></i>
+<h6>Free Shipping</h6>
+<p>For all oder over $99</p>
+</div>
+</div>
+<div class=" col-sm-6">
+<div class="services__item">
+<i class="fa-solid fa-money-bill"></i><h6>Money Back Guarantee</h6>
+<p>If good have Problems</p>
+</div>
+</div>
+<div class=" col-sm-6">
+<div class="services__item">
+<i class="fa-solid fa-earth-oceania"></i><h6>Online Support 24/7</h6>
+<p>Dedicated support</p>
+</div>
+</div>
+<div class=" col-sm-6">
+<div class="services__item">
+<i class="fa fa-headphones"></i>
+<h6>Payment Secure</h6>
+<p>100% secure payment</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="hover">
+<div class="instagram__item1">
+   <div class="instagram__text">
+<i class="fa fa-instagram"></i>
+<a href="#">@ ashion_shop</a>
+</div>
+</div>
+<div class="instagram__item2">
+ 
+</div>
+<div class="instagram__item3">
+</div>
+<div class="instagram__item4">
+</div>
+<div class="instagram__item5">
+</div>
+<div class="instagram__item6">
+</div>
+
+</div>
+
+
           <div class="footer">
             <div class="column1">
-              <img src="./Images/logo.png.webp"/>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis laborum corrupti facere similique! Minus excepturi odio, perferendis impedit dolore quia ipsam reprehenderit laudantium facilis quo ducimus numquam dicta nisi unde.</p>
+              <div class="logo"> <img src="./Images/logo.png.webp"/></div>
+              <div class="desc">              <p>Lorem ipsum dolor, sit amet consectetur borum corrupti facere similique! Minus excepturi odio, perferendis impedit dolore quia ipsam rei unde.</p>
+</div>
+             
+           <div class="footer__payment">
+<a href="#"><img src="./Images/payment-1.png.webp" alt=""></a>
+<a href="#"><img src="./Images/payment-2.png.webp" alt=""></a>
+<a href="#"><img src="./Images/payment-3.png.webp" alt=""></a>
+<a href="#"><img src="./Images/payment-4.png.webp" alt=""></a>
+<a href="#"><img src="./Images/payment-5.png.webp" alt=""></a>
+</div>
             </div>
             <div class="column2">
-             <h3>QUICK LINKS</h3>
-             <p>About</p>
+              <div class="head"> <h2>QUICK LINKS</h2></div>
+              <div class="list">  <p>About</p>
              <p>Blogs</p>
              <p>Contact</p>
-             <p>FAQ</p>
+             <p>FAQ</p></div>          
             </div>
              <div class="column3">
-             <h3>ACCOUNT</h3>
-             <p>My Account</p>
+              <div class="head">             <h2>ACCOUNT</h2>
+</div>
+<div class="list"> <p>My Account</p>
              <p>Older Tracking</p>
              <p>Checkout</p>
-             <p>Wishlist</p>
+             <p>Wishlist</p></div>
+            
             </div>
               <div class="column4">
-             <h3>NEWSLETTER</h3>
-            <input type="text" placeholder="Email">
-            <i class="fa-brands fa-facebook"></i>
+                <div class="head"><h2>NEWSLETTER</h2></div>
+             
+             <div class="input"><input type="text" placeholder="Email">
+            <button class="btn">SUBSCRIBE</button></div>
+            
+            <div class="icon"><i class="fa-brands fa-facebook"></i>
             <i class="fa-brands fa-twitter"></i>
             <i class="fa-brands fa-youtube"></i>
-            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-youtube"></i></div>
+            
             
             </div>
 
@@ -415,6 +545,9 @@
           </div>
 
       </div>
+      <div class="footer__copyright__text">
+<p>Copyright © <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script>document.write(new Date().getFullYear());</script>2024 All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+</div>
      
     
   </body>
