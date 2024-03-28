@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>to do list</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <h2>Todo List using Javascript</h2>
+    <div id="fisrtDiv" class="header">
+      <input type="text" id="myInput" placeholder="Title..." />
+      <span onclick="newElement()" class="addBtn">Add</span>
+    </div>
+
+    <ul id="myList">
+      <li>I will wake up at 8 in the morning</li>
+      <li>I will practice 1 hour</li>
+      <li>I will practice 1 hour</li>
+      <li>Then i will have breakfast</li>
+    </ul>
+    <script>
+      var List = document.getElementsByTagName("li");
+      var i;
+      for (i = 0; i < List.length; i++) {
+        var span = document.createElement("span");
+        var txt = document.createTextNode("\u00D7");
+        span.className = "close";
+        span.appendChild(txt);
+        List[i].appendChild(span);
+      }
+      var close = document.getElementsByClassName("close");
+      var i;
+      for (i = 0; i < close.length; i++) {
+        close[i].onclick = function () {
+          var div = this.parentElement;
+          div.style.display = "none";
+        };
+      }
+
+      function newElement() {
+        var li = document.createElement("li");
+        var inputValue = document.getElementById("myInput").value;
+        var t = document.createTextNode(inputValue);
+        li.appendChild(t);
+        if (inputValue === "") {
+          alert("Please add anything new");
+        } else {
+          document.getElementById("myList").appendChild(li);
+        }
+        document.getElementById("myInput").value = "";
+
+        var span = document.createElement("span");
+        var txt = document.createTextNode("\u00D7");
+        span.className = "close";
+        span.appendChild(txt);
+        li.appendChild(span);
+
+        for (i = 0; i < close.length; i++) {
+          close[i].onclick = function () {
+            var div = this.parentElement;
+            div.style.display = "none";
+          };
+        }
+      }
+    </script>
+  </body>
+</html>

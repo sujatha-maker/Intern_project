@@ -31,6 +31,9 @@ h3:after {
   background: #ca1515;
   content: "";
 }
+.center-div ul li:hover .li {
+  border-bottom: 1px solid #ca1515;
+}
 
 .labelnew {
   font-size: 12px;
@@ -101,42 +104,42 @@ h3:after {
 
 .product1:hover .product__hover {
   visibility: inherit;
-  bottom: 120px;
+  bottom: 150px;
 }
 
 .product2:hover .product__hover {
   visibility: inherit;
-  bottom: 120px;
+  bottom: 150px;
 }
 
 .product3:hover .product__hover {
   visibility: inherit;
-  bottom: 120px;
+  bottom: 150px;
 }
 
 .product4:hover .product__hover {
   visibility: inherit;
-  bottom: 120px;
+  bottom: 150px;
 }
 
 .product5:hover .product__hover {
   visibility: inherit;
-  bottom: 120px;
+  bottom: 150px;
 }
 
 .product6:hover .product__hover {
   visibility: inherit;
-  bottom: 120px;
+  bottom: 150px;
 }
 
 .product7:hover .product__hover {
   visibility: inherit;
-  bottom: 120px;
+  bottom: 150px;
 }
 
 .product8:hover .product__hover {
   visibility: inherit;
-  bottom: 120px;
+  bottom: 150px;
 }
 
 .product__hover div:hover {
@@ -189,21 +192,31 @@ h3.logo {
   font-size: 15px;
   columns: #111111;
 }
+.pagehover {
+  position: relative;
+}
 
-li .dropdown-content {
-  display: none;
+.pagehover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   position: absolute;
-  background-color: black;
-  min-width: 160px;
-  padding: 12px 16px;
+  top: 30px;
+  width: 150px;
+  background: #111111;
+  text-align: left;
+  padding: 10px;
+  visibility: hidden;
   color: white;
-  font-weight: 500px;
-  font-size: 15px;
-  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
 }
 
 .pagehover:hover .dropdown-content {
-  display: block;
+  visibility: inherit;
 }
 
 .center-div ul li {
@@ -269,6 +282,13 @@ nav .right-div {
   gap: 10px;
   height: 600px;
   flex: 1;
+  padding: 20px;
+}
+.left-Side .textpart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 30px;
 }
 
 .right-Side {
@@ -281,28 +301,19 @@ nav .right-div {
   justify-content: center;
   gap: 10px;
   flex: 1;
-
 }
 
 .right-Side .part1 {
-
   display: flex;
   justify-content: center;
   gap: 10px;
-
-
-
 }
 
 .right-Side .part2 {
-
   display: flex;
   justify-content: center;
 
   gap: 10px;
-
-
-
 }
 
 .left-Side h1 {
@@ -312,6 +323,24 @@ nav .right-div {
   font-size: 70px;
   font-style: normal;
   font-weight: 400;
+}
+.left-Side h3 {
+  font-size: 14px;
+  color: #111111;
+  text-transform: uppercase;
+  font-weight: 600;
+  position: relative;
+  padding: 0 0 3px;
+  display: inline-block;
+}
+.banner-Content h3 {
+  font-size: 14px;
+  color: #111111;
+  text-transform: uppercase;
+  font-weight: 600;
+  position: relative;
+  padding: 0 0 3px;
+  display: inline-block;
 }
 
 .left-Side p {
@@ -329,11 +358,8 @@ nav .right-div {
   justify-content: center;
   align-items: center;
   gap: 10px;
-
+  flex-wrap: wrap;
 }
-
-
-
 
 .right-Side h3 {
   font-size: 14px;
@@ -357,15 +383,12 @@ nav .right-div {
   background-position: top center;
   background-size: cover;
   display: flex;
-  flex-wrap: wrap;
 
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   align-content: center;
   height: 300px;
   flex: 1;
-
 }
 
 .box1 .textpart {
@@ -402,12 +425,9 @@ nav .right-div {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   align-content: left;
   height: 300px;
   flex: 1;
-
-
 }
 
 .right-Side .box3 {
@@ -418,11 +438,9 @@ nav .right-div {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   align-content: center;
   height: 300px;
   flex: 1;
-
 }
 
 .right-Side .box4 {
@@ -433,13 +451,10 @@ nav .right-div {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   align-content: center;
   height: 300px;
   flex: 1;
-
 }
-
 
 .header1 h4 {
   font-size: 20px;
@@ -453,7 +468,9 @@ nav .right-div {
   box-sizing: border-box;
   line-height: 1.2;
 }
-
+.menu-icon i {
+  visibility: hidden;
+}
 .header1 h4:after {
   position: absolute;
   left: 0;
@@ -510,6 +527,7 @@ nav .right-div {
   align-items: center;
   gap: 15px;
   margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 
 .product-Top div {
@@ -600,7 +618,8 @@ nav .right-div {
   background-position: top center;
 }
 
-.banner-Content {}
+.banner-Content {
+}
 
 .banner h1 {
   font-size: 40px;
@@ -639,6 +658,9 @@ nav .right-div {
 .header1 {
   padding: 20px;
 }
+.header1 h4 {
+  margin-bottom: 40px;
+}
 
 .item1 {
   display: flex;
@@ -662,6 +684,7 @@ nav .right-div {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  position: relative;
 }
 
 .information h2 {
@@ -671,21 +694,40 @@ nav .right-div {
   line-height: 46px;
   margin-bottom: 10px;
 }
-
-.row {
-  display: flex;
-  padding: 30px;
+.information .circle {
+  position: absolute;
+  height: 183px;
+  width: 183px;
+  background: #ffffff;
+  border-radius: 50%;
+  z-index: -1;
+}
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.col-sm-6 {
+.container .row {
   display: flex;
-  width: 100%;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  padding: 60px;
+}
+
+.row .col-sm-6 {
+  display: flex;
+  flex: 1;
 }
 
 .services__item {
   padding-left: 65px;
   position: relative;
   margin-bottom: 20px;
+  flex: 1;
 }
 
 .services__item i {
@@ -722,9 +764,7 @@ nav .right-div {
   margin-left: -15px;
   font-family: "Montserrat", sans-serif;
   justify-content: center;
-
 }
-
 
 .hover .instagram__item1 {
   background-image: url("./Images/insta-1.jpg.webp");
@@ -817,37 +857,28 @@ nav .right-div {
 }
 
 .hover .instagram__item1:hover .instagram__text {
-
   visibility: inherit;
 }
 
 .hover .instagram__item2:hover .instagram__text {
-
   visibility: inherit;
 }
 
 .hover .instagram__item3:hover .instagram__text {
-
   visibility: inherit;
 }
 
 .hover .instagram__item4:hover .instagram__text {
-
   visibility: inherit;
 }
 
 .hover .instagram__item5:hover .instagram__text {
-
   visibility: inherit;
 }
 
 .hover .instagram__item6:hover .instagram__text {
-
   visibility: inherit;
 }
-
-
-
 
 .instagram__text {
   visibility: hidden;
@@ -870,12 +901,7 @@ nav .right-div {
   background: rgba(255, 255, 255, 0.9);
   height: 100%;
   width: 100%;
-
-
-
 }
-
-
 
 .footer {
   display: flex;
@@ -898,6 +924,12 @@ nav .right-div {
   flex-direction: column;
   gap: 15px;
 }
+.column2 p {
+  margin-bottom: 10px;
+}
+.column3 p {
+  margin-bottom: 10px;
+}
 
 .footer .column3 {
   display: flex;
@@ -908,7 +940,7 @@ nav .right-div {
 .footer .column4 {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
 }
 
 .column4 input {
@@ -963,7 +995,7 @@ nav .right-div {
   margin-top: 35px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 992px) {
   nav .center-div {
     display: none;
   }
@@ -971,10 +1003,9 @@ nav .right-div {
   nav .right-div .box1 {
     display: none;
   }
-
-
-
-
+  .main {
+    display: block;
+  }
 
   .product-List {
     display: flex;
@@ -983,12 +1014,11 @@ nav .right-div {
   }
 
   .product-contain {
-    display: block;
-  }
-
-  .product-contain .product-Top {
     display: flex;
     flex-wrap: wrap;
+
+    margin-right: -15px;
+    margin-left: -15px;
   }
 
   .hot_trend {
@@ -1000,6 +1030,9 @@ nav .right-div {
     display: flex;
     flex-wrap: wrap;
   }
+  .menu-icon i {
+    visibility: inherit;
+  }
 }
 
 @media (min-width: 700px) {
@@ -1010,9 +1043,19 @@ nav .right-div {
   .right-div .box2 {
     display: inline;
   }
+  /* .hover {
+    display: flex;
+    flex-wrap: wrap;
+  } */
 }
 
-@media (max-width: 550px) {
+@media (max-width: 575px) {
+  .main .right-Side .part1 {
+    display: block;
+  }
+  .main .right-Side .part2 {
+    display: block;
+  }
   .left-div ul {
     display: none;
   }
@@ -1026,6 +1069,10 @@ nav .right-div {
   .left-Side {
     flex: 0 0 50%;
     max-width: 50%;
+  }
+  .container .row {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
